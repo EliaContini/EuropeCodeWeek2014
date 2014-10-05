@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+/*
+    Author : Elia Contini
+    Created: 05 Oct 2014
+ */
+
+/********************************************************************** Reset */
+body,
+div,
+h1,
+h2,
+h3,
+p,
+header,
+nav,
+main,
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    display: none;
+}
+
+img {
+    border: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+    padding-bottom: .5em;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+/*********************************************************************** Base */
+.fe {
+    background-color: #f2f2f2;
+    color: #333;
+    font-family: sans-serif;
+    font-size: 100%;
+}
+
+.fe .imgLeft {
+    float: left;
+}
+
+.fe .imgRight {
+    float: right;
+}
+
+.fe .imgCenter {
+    display: block;
+    margin: .5em auto;
+}
+/********************************************************************* Layout */
+.fe .header {
+    background-color: #4285F4;
+    color: #fff;
+    padding: .25em .5em;
+}
+
+.fe .header .title {
+    padding: 0;
+}
+
+.fe .navigation {
+    background-color: #d3d3d3;
+    color: #333;
+}
+
+.fe .content {
+    padding: 1em;
+}
+
+.fe .footer {
+    border-top: 1px solid #d3d3d3;
+    font-size: 80%;
+    padding-top: .25em;
+    text-align: center;
+}
+/***************************************************************** Components */
+
+/************************************************************ Menu ************/
+.fe .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fe .menu .item {
+    display: inline-block;
+}
+
+.fe .menu .item a:link,
+.fe .menu .item a:visited {
+    color: #666;
+    display: block;
+    margin-left: .25em;
+    margin-top: .25em;
+    padding: .25em;
+}
+
+.fe .menu .item a:hover,
+.fe .menu .item a:active {
+    color: #333;
+    text-decoration: none;
+}
+
+.fe .menu .current a:link,
+.fe .menu .current a:visited {
+    background-color: #f2f2f2;
+    color: #333;
+    display: block;
+    margin-top: .25em;
+    padding: .25em;
+}
+/************************************************************ Form ************/
+
+.fe .fieldList input {
+    border: 1px solid #d3d3d3;
+    font-family: sans-serif;
+    font-size: 100%;
+    margin: .15em;
+    padding: .15em;
+}
+
+.fe .fieldList input:hover {
+    background-color: #E6F1FE;
+    border-color: #4285F4;
+}
+
+.fe .fieldList input:focus {
+    background-color: #fff;
+    border-color: #4285F4;
+    outline: 0;
+}
+
+.fe .fieldList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fe .fieldList .item {
+    padding: .5em 0;
+}
+
+.fe .buttonBar {
+    text-align: right;
+}
+
+.fe .buttonBar button {
+    background-color: #4285F4;
+    border: 1px solid #d3d3d3;
+    color: #fff;
+    font-size: 100%;
+    padding: .25em .5em;
+}
